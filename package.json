@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/nyc/bin/nyc.js  ./node_modules/mocha/bin/mocha --reporter spec test/**/*.js"
+    "test": "./node_modules/nyc/bin/nyc.js  ./node_modules/mocha/bin/mocha --reporter spec test/**/*.js",
     "coverage": "./node_modules/nyc/bin/nyc.js report --reporter=text-lcov > coverage.lcov && ./node_modules/codecov/bin/codecov -t 284b3d8f-5633-41ca-a3ce-b2067cceb6ee",
     "codacy-coverage": "./node_modules/nyc/bin/nyc.js report --reporter=lcov --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/.bin/codacy-coverage  && rm -rf ./coverage"
   },
