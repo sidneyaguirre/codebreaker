@@ -47,7 +47,7 @@ describe('CodeBreaker', function() {
   });
 
   it('should return ERROR number length is greather than 4', function() {
-    let result = CodeBreaker.guess(12345);
+    let result = CodeBreaker.guess(1234);
     assert.equal('ERROR',result);
   });
 
